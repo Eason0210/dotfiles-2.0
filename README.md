@@ -122,7 +122,21 @@ Note: Whatever method you follow, if you want the weather and quote features to 
 0,30 * * * * /home/{Your-username}/.config/eww/scripts/getweather
 @reboot /home/{Your-username}/.config/eww/scripts/getquotes
 ```
+If you are using Arch Linux, and you can't find the command crontab, install it:
 
+``` bash
+sudo pacman -S cronie
+
+```
+
+After create your crontab, and if on systemd, enabled the serive:
+
+``` bash
+sudo systemctl enable cronie.service
+sudo systemctl start cronie.service
+# check the status with:
+sudo systemctl status cronie.service
+```
 
 And please follow these next few steps as well:
 - Add `export PATH="$PATH:$HOME/bin"` to your `~/.bashrc` file (or a shell of your choice).
