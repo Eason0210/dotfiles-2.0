@@ -15,9 +15,9 @@ fi
 # If you dunno, head to openweathermap.org, and make and account 
 #(completely free I swear, and then get your API Key and  your City ID)
 # I wish I was smart enough to do it like Elena, but this is the top I could do lol
-KEY="API_KEY_HERE"
-ID="CITY_ID_HERE"
-UNIT="UNIT" #Options are 'metric' and 'imperial'
+KEY="API_KEY_HERE" # Get it from your account
+ID="CITY_ID_HERE"  # City ID for Shanghai is 1796236, get your City ID by https://openweathermap.org/find?q=
+UNIT="metric" #Options are 'metric' and 'imperial'
 weather=$(curl -sf "http://api.openweathermap.org/data/2.5/weather?APPID="$KEY"&id="$ID"&units="$UNIT"")
 echo $weather
 if [ ! -z "$weather" ]; then
