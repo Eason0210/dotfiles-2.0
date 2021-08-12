@@ -132,10 +132,10 @@ sudo pacman -S cronie
 After create your crontab, and if on systemd, enabled the serive:
 
 ``` bash
-sudo systemctl enable cronie.service
-sudo systemctl start cronie.service
+systemctl enable cronie.service
+systemctl start cronie.service
 # check the status with:
-sudo systemctl status cronie.service
+systemctl status cronie.service
 ```
 
 And please follow these next few steps as well:
