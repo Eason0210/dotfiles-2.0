@@ -244,6 +244,8 @@ And here we are:
 
 1. If xmonad doesn't build make sure you have `xmonad-contrib`
 2. Bar looks weird: Try editing it a bit using `~/bin/tint2conf`. 
+   You can edit configuration files under `~/.config/tint2/` to adjust the size of bar. For 2560X1440 resolution, you can change font size from 8 to 13, from 10 to 15. and size of bar from 28 to 32, vertical margin from 8 to 5.
+   
 3. Alacritty configs are faulty: I'm not sure about this one, works perfectly fine for me. 
 4. Widgets positioning weird: I hardcoded them for a 1366x768 screen, will create others if I can
 5. Fonts: GET THOSE FONTS!
