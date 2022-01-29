@@ -92,7 +92,7 @@
           (box :class "pfp"))
         (box :orientation "v" :space-evenly "false"  
           (box :class "pfptxt" :valign "center" {whoami})
-          (box :class "subpfptxt" :halign "center" "Configs go brr"))))
+          (box :class "subpfptxt" :halign "center" "I Love Haskell"))))
     (defwidget weather [] 
       (box :orientation "v" :space-evenly "false" 
         (box :orientation "h" :space-evenly "false" 
